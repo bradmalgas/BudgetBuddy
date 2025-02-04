@@ -2,7 +2,7 @@
 
 ## Overview
 
-BudgetBuddy is a chatbot-powered financial assistant that allows users to query their transaction data using natural language. The system leverages a locally hosted LLM (DeepSeek Coder 6.7B) to generate SQL queries, which are executed on a DuckDB database.
+BudgetBuddy is a chatbot-powered financial assistant that allows users to query their transaction data using natural language. The system leverages a locally hosted LLM (DeepSeek Coder 1.3B) to generate SQL queries, which are executed on a DuckDB database.
 
 ## Features
 
