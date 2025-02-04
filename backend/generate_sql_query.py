@@ -29,8 +29,25 @@ def generate_sql(prompt):
 
     return sql_query.replace("\n", " ")
 
+# Function to execute SQL query in DuckDB
+def run_query(sql_query):
+    # create a connection to file
+    con = duckdb.connect(DB_PATH)
+    try:
+        result = con.execute(sql_query).fetchall()
+        con.close()
+        return result
+    except Exception as e:
+        con.close()
+        return f"Error: {e}"
+
 
 # Prompt the LLM to generate a SQL query
 prompt = "Write a SQL query to find the top 3 most expensive transactions from a table named 'transactions'. The 'transactions' table has the following columns: date timestamp, details TEXT, amount FLOAT, category TEXT"
 sql_query = generate_sql(prompt)
 print(f"Generated SQL Query:\n{sql_query}")
+
+# Run the SQL query in DuckDB
+result = run_query(sql_query)
+print("Query Result:")
+print(result)
