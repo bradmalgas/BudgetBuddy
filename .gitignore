@@ -1,0 +1,39 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Virtual environment
+venv/
+.env/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# DuckDB database files
+*.duckdb
+*.db
+
+# Model checkpoints and cache
+*.pt
+*.bin
+
+# Hugging Face Transformers cache
+~/.cache/huggingface/
+
+# Logs and temporary files
+logs/
+*.log
+*.tmp
+
+# VS Code and IDE settings
+.vscode/
+.idea/
+*.iml
+
+# OS-specific files
+.DS_Store
+Thumbs.db
+
+# Environment variables
+.env
