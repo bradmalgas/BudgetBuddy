@@ -1,0 +1,18 @@
+# LLM Model Dependencies
+torch>=2.0
+transformers==4.35.0
+tokenizers>=0.14.0
+accelerate
+sympy==1.12
+pebble
+timeout-decorator
+attrdict
+
+# API & Data Handling
+fastapi
+uvicorn
+pydantic
+python-dotenv
+
+# Database
+duckdb
